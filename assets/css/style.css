@@ -1,0 +1,391 @@
+section, figure, article,img, a, ul, li, span, div,
+footer, nav, header, p, button, video, source{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------- HEADER --------- */
+figure.logo-header {
+    height: 72px;
+    background: url("../images/fond_header.gif") repeat-x;
+    margin: 0;
+}
+figure.logo-header img {
+    margin-left: 135px;
+}
+/* ----------- SECTION SLIDER VIDEO ----------- */
+section.slider-video {
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, .4);
+}
+figure.logo-puma {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ff6600;
+}
+figure.logo-puma img{
+    height: 30px;
+    width: 55px;
+}
+article.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+h1 {
+    font-size: 3.2rem;
+}
+article.title p {
+    font-size: .8rem;
+}
+button.btn-video {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    font-size: .5rem;
+    cursor: pointer;
+    padding: 10px 10px 10px 20px;
+}
+button.btn-video:hover {
+    color: #000;
+}
+.Icon {
+    height: 7px;
+    width: 7px;
+    margin-left: 10px;
+}
+.Icon path{
+    stroke-width: 1px;
+    stroke: #fff;
+    fill: none;
+}
+video {
+    object-fit: cover;
+}
+video.video-head {
+    position: fixed;
+    height: 100vh;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 56px;
+}
+article.title, figure.log-puma {
+    width: 100%;
+    margin: auto;
+}
+
+/* ------------- SECTION FLIPPER ------------- */
+.flip-card-container {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contain, .contain2 {
+    min-width: 378px;
+    margin-top: -30px;
+    perspective: 900px;
+}
+.contain:hover .flipper, .contain2:hover .flipper2 {
+    transform: rotateY(180deg);
+}
+.flip-card-container .contain,
+.flip-card-container .contain2,
+.flip-card-container .front,
+.flip-card-container .back {
+    width: 378px;
+    height: 255px;
+}
+.flipper , .flipper2{
+    transition: .6s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.back {
+    background: black;
+    padding: 30px 5px 0;
+    color: #fff;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+button.btn {
+    height: 40px;
+    width: 160px;
+    color: #0A246A;
+    background: #FB1;
+    cursor: pointer;
+}
+button.btn:hover {
+    color: snow;
+}
+/* ----------- SECTION BLOG ----------- */
+section.blog {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article.title-blog {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+article.title-blog p {
+    color: #ccc;
+}
+.container-blog {
+    height: auto;
+    width: 756px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-blog .contain {
+    margin-top: 0;
+}
+.flip-basket, .contain, .container-blog .back, .container-blog .front,
+.flip-tag-container, .flip-star-container, .flip-kany-container {
+    height: 377px;
+    width: 378px;
+}
+.container-blog .back {
+    padding-top: 90px;
+}
+div.coke, .teeth, .woman, .tatoo {
+    height: 377px;
+    width: 378px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-nike-air, .image-tatoo,
+.bg-woman, .bg-teeth,
+.bg-sit, .bg-artist,
+.bg-coke, .bg-stan-smith {
+    height: 189px;
+    width: 189px;
+}
+.image-tatoo {
+   background: url("../images/tatoo.jpg") 0 0 no-repeat;
+}
+.image-nike-air {
+    background: url("../images/nike.gif") 0 0 no-repeat;
+}
+.txt {
+    height: 189px;
+    width: 189px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.txt p {
+    text-align: center;
+    font-size: .9rem;
+    padding: 10px;
+}
+img.right-arrow {
+    height: 15px;
+    width: 30px;
+}
+.triangle {
+    display: block;
+    transform: translateX(-15px) rotate(45deg);
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-top: 90px;
+    background: #fff;
+}
+.triangle.left {
+    float: right;
+    transform: translateX(15px) rotate(45deg);
+}
+.bg-woman {
+    background: url("../images/femme.jpg") 0 0 no-repeat;
+}
+.bg-sit {
+    background: url("../images/assis.jpg") 0 0 no-repeat;
+}
+.bg-coke {
+    background: url("../images/coca.jpg") 0 0 no-repeat;
+}
+.bg-stan-smith {
+    background: url("../images/stan.jpg") 0 0 no-repeat;
+}
+.bg-artist {
+    background: url("../images/artist.jpg") 0 0 no-repeat;
+}
+.bg-teeth {
+    background: url("../images/dent.jpg") 0 0 no-repeat;
+}
+.btn-blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
+    width: 100%;
+}
+.btn-blog button {
+    padding: 10px 30px;
+    font-size: .7rem;
+    color: #000;
+    cursor: pointer;
+}
+/* -------------- SECTION SPONSOR -------------- */
+section.sponsor {
+    background: #e1e1e1;
+}
+figure {
+    margin: 0;
+}
+section.sponsor img {
+    padding: 10px 0 0;
+    display: block;
+    margin: 0 auto;
+}
+span.icon-orange {
+    display: block;
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background: #ff6600;
+    transform: translateY(34px) rotate(45deg) translateX(-50%);
+}
+.icon-top {
+    height: 15px;
+    width: 15px;
+    transform: rotate(-135deg) translate(-2px, -7px);
+}
+.icon-top path{
+    stroke-width: 3px;
+    stroke: #fff;
+    fill: none;
+}
+/* -------------- FOOTER --------------- */
+footer {
+    background: #161616;
+    height: auto;
+    min-height: 310px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.nav-right, .nav-left {
+    padding-top: 45px;
+}
+.nav-left ul li, .nav-right ul li {
+    list-style: none;
+    display: inline;
+}
+.nav-right ul li a, .nav-left ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: .8rem;
+    color: #585858;;
+}
+.nav-right ul li a:hover, .nav-left ul li a:hover {
+    color: #fff;
+    border-bottom: 1px solid #ff6600;
+}
+footer p {
+    color: #585858;
+    font-size: .8rem;
+    margin-top: 20px;
+}
+div.social {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+div.social figure {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+/* --------------- MEDIA QUERIES ---------------- */
+@media screen and (min-width: 320px) and (max-width: 760px){
+    figure.logo-header img {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    section.slider-video {
+        background: hsl(0, 0%, 15%);
+    }
+    video.video-head {
+        display: none;
+    }
+    section.sponsor img {
+        width: 100%;
+    }
+    .contain, .contain2 {
+        margin-top: 0;
+    }
+    .nav-left {
+        margin-top: 50px;
+    }
+    .nav-left ul li, .nav-right ul li {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .logo-bottom {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .nav-left ul li, .nav-right ul li {
+        display: block;
+        width: 100%;
+    }
+    div.social {
+        margin-top: 20px;
+    }
+    footer p {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 960px) {
+    .logo-bottom {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-right {
+        padding-top: 0;
+    }
+    .social {
+        margin-top: 20px;
+    }
+}
